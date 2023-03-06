@@ -1,0 +1,200 @@
+:root {
+    --primary-color: #fcfcfc;
+    --secondary-color: #5d737e;
+    --color-a: #30292f;
+    --color-b: #3f4045;
+    --color-c: #02111b;
+}
+
+html {
+    background-color: var(--secondary-color);
+    color: #f9faf8;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    /*display: flex;
+    flex-direction: column;
+    justify-content: space-between;*/
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    font-size: 18px;
+    color: (var(--secondary-color));
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+.media-container {
+    overflow: hidden;
+}
+
+.media-container {
+    overflow: hidden;
+}
+.media-container img,
+.media-container video {
+    display: block;
+    width: 100%;
+}
+
+  /* Header */
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem 2rem;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+  }
+  
+  header img {
+    width: 2rem;
+    height: 1rem;
+    padding: 0 .25rem;
+  }
+  
+  #headnav ul {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+  }
+  
+  #headnav li {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s ease-in;
+  }
+  
+  #headnav li:hover, 
+  #headnav li:hover > * {
+    font-weight: bold;
+    color: var(--color-c)
+  }
+  
+  #headnav li:hover .dropdown-content {
+    font-weight: normal;
+  }
+  
+  #logo span {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropbtn {
+    background-color: transparent;
+    color: var(--secondary-color);
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+  }
+
+  .dropbtn:hover {
+    color: var(--color-c)
+  }
+  
+  .dropdown-content {
+    display: none;
+    background-color: var(--primary-color);
+    position: absolute;
+    z-index: 1;
+    transition: all 0.3s ease-out;
+    left: -.5rem;
+  }
+  
+  .dropdown-content a{
+    color: var(--secondary-color);
+    padding: 15px 1rem;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover{
+    font-weight: bold;
+    color: var(--color-c)
+  }
+  
+  .dropdown:hover .dropdown-content{
+    display: block;
+    transition: max-height 0.3s ease-in;
+  }
+
+  /* Banner Section */
+  #banner-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../images/pexels-tomáš-malík-3408354.jpg');
+    background-size: cover;
+    height: 35rem;
+    background-position: center;
+  }
+
+  #banner-section .content{
+    width: 100%;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(48, 41, 47, .5); /* this is #30292f converted to rgba and the final number is opacity */
+  }
+
+  #banner-section h2{
+    font-family: 'Noto Sans JP', sans-serif;
+  }
+
+  /* Compass Section */
+  #maps-section {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #maps-section h2 {
+    text-align: center;
+    padding: 2rem 0 0;
+  }
+
+  #maps-section .content {
+    display: inline-flex;
+    padding: .5rem 12rem 4rem;
+    gap: 2rem;
+  }
+
+  #maps-section .map-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #maps-section .map-box img {
+    width: 15rem;
+    border: solid 3px var(--color-b);
+    border-radius: 50%;
+  }
+
+  #maps-section .jname {
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #3f4045;
+  }
+
+  /* Gear Section */
+  #gear-section {
+    display: flex;
+  }

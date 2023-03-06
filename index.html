@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <title>Landing Page</title>
+      <link href="./resources/css/style.css" rel="stylesheet" type="text/css">
+      <link rel="icon" type="image/png" sizes="16x16" href="./resources/images/favicon-16x16.png">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+      <script src="./script.js" defer></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+      <script id="table-row-template" type="text/-xhandlebars-template">
+        <tr>
+            <td>{{ type }}</td>
+            <td>{{ weight }}</td>
+            <td>{{ cost }}</td>
+            <td>{{ benefits }}</td>
+        </tr>
+      </script>
+    </head>
+    <body>
+        <header>
+            <div id="logo"><img src="./resources/images/mountain.png"><span>Yama Hike</span></div>
+            <div id="headnav">
+                <ul>
+                    <li>
+                      <div class="dropdown">
+                        <div class="dropbtn">Special Sites</div>
+                          <div class="dropdown-content">
+                            <a href="">Mount Fuji</a>
+                            <a href="#">Aokigahara Forest</a>
+                            <a href="#">Hachiman Shrine</a>
+                          </div>
+                      </div>
+                    </li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+        </header>
+        <div class="main-content">
+
+            <!-- Banner Section -->
+            <div id="banner-section">
+                <div class="content">
+                    <h2>七転び八起き</h2>
+                    <h4>Fall down seven times, stand up eight</h4>
+                </div>
+            </div>
+
+            <!-- Compass Section -->
+            <div id="maps-section">
+                <h1>The possibilities are endless.</h1>
+                <h3>Explore some of the many hiking & mountaineering routes accessible from Tokyo</h3>
+                <div class="content">
+                    <div class="map-box">
+                        <div class="media-container">
+                            <img src="./resources/images/map1.png" alt="map route">
+                        </div>
+                        <p><span class="jname">鷹ノ巣山</span> | Mt. Takanosu</p>
+                    </div>
+                    <div class="map-box">
+                        <div class="media-container">
+                            <img src="./resources/images/map2.png" alt="map route">
+                        </div>
+                        <p><span class="jname">槍ヶ岳山</span> | Mt. Yari</p>
+                    </div>
+                    <div class="map-box">
+                        <div class="media-container">
+                            <img src="./resources/images/map3.png" alt="map route">
+                        </div>
+                        <p><span class="jname">高水山</span> | Mt. Takamizu</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gear Section -->
+            <div id="gear-section">
+                <div class="content">
+                    <div class="media-container">
+                        <img src="./resources/images/gear_pic.jpeg">
+                    </div>
+                    <h3>It doesn't hurt to be prepared</h3>
+                    <p>Here is our usual gear loadout</p>
+                </div>
+                <div class="subcontent">
+                    <div id="gear-table"></div>
+                </div>
+            </div>
+
+            <!-- Action Section -->
+            <div id="action-section">
+
+            </div>
+        </div>
+        <footer>
+            <p><span>Copyright JWeber13</span></p>
+        </footer>
+    </body>
+
+</html>
