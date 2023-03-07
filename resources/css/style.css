@@ -197,4 +197,49 @@ a:visited {
   /* Gear Section */
   #gear-section {
     display: flex;
+    background-color: var(--color-b);
+    color: var(--primary-color);
+  }
+
+  #gear-section .content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    border-right: solid 1px var(--primary-color);
+  }
+
+  #gear-section .media-container {
+    border-radius: 15px;
+    border: .25rem solid var(--primary-color);
+  }
+
+  #gear-section .content img {
+    height: 500px;
+    width: auto;
+  }
+
+  #gear-section .subcontent {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+  }
+
+  .gear-table {
+    border-collapse: collapse;
+  }
+
+  .gear-table th, td{
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .gear-table tr:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
   }
